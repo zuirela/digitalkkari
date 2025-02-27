@@ -13,7 +13,7 @@
         }
 
         body {
-            background-color: #F4E3C3; /* Vaalean beige tausta, logo mukainen */
+            background-color: #F4E3C3; /* Vaalean beige tausta */
             color: #1A4B2D; /* Tummanvihreä teksti */
             text-align: center;
             font-size: 16px;
@@ -23,7 +23,6 @@
         header {
             padding: 40px 0;
             background-color: #1A4B2D; /* Tumma vihreä tausta headerissä */
-            position: relative;
         }
 
         header h1 {
@@ -37,28 +36,12 @@
             color: #F4E3C3;
         }
 
-        .premium-btn {
-            background: #D4AF37;
-            color: black;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            position: absolute;
-            top: 20px;
-            right: 20px;
-        }
-
-        .premium-btn:hover {
-            background-color: #B68B2D;
-        }
-
         .service-info {
-            background-color: #3C4C4C;
+            background-color: #2D6A3E; /* Tummanvihreä tausta palvelukuvaukselle */
             padding: 15px 0;
             margin-top: 15px;
             font-size: 1.1rem;
-            color: #D4AF37;
+            color: #D4AF37; /* Kultainen teksti */
         }
 
         .main-content {
@@ -74,7 +57,7 @@
 
         .contact-btn {
             padding: 12px 20px;
-            background-color: #D4AF37;
+            background-color: #D4AF37; /* Kultainen tausta painikkeelle */
             color: black;
             border-radius: 6px;
             text-decoration: none;
@@ -83,7 +66,7 @@
         }
 
         .contact-btn:hover {
-            background-color: #B68B2D;
+            background-color: #B68B2D; /* Tumma kultainen hover-efekti */
         }
 
         .product-list {
@@ -110,12 +93,12 @@
         .product-item h3 {
             font-size: 1.5rem;
             margin-bottom: 10px;
-            color: #D4AF37;
+            color: #D4AF37; /* Kultainen teksti */
         }
 
         .product-item p {
             font-size: 1rem;
-            color: #F4E3C3;
+            color: #F4E3C3; /* Vaalean beige teksti */
             margin-bottom: 15px;
         }
 
@@ -133,6 +116,23 @@
         footer a {
             color: #D4AF37;
             text-decoration: none;
+        }
+
+        /* Premium button - sijoitetaan oikeaan yläkulmaan */
+        .premium-btn {
+            background: #D4AF37;
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .premium-btn:hover {
+            background-color: #B68B2D;
         }
 
     </style>
@@ -166,4 +166,47 @@
         <div class="product-list">
             <div class="product-item">
                 <h3>Kotiverkon ja WiFi-tuki</h3>
-                <p>Optimoimme kotiverkk
+                <p>Optimoimme kotiverkkosi ja Wi-Fi-signaalisi parhaaksi mahdolliseksi. <strong>99 €</strong></p>
+            </div>
+            <div class="product-item">
+                <h3>Tietokoneen ja laitteen tuki</h3>
+                <p>Asennamme ja päivitämme laitteesi. Tarjoamme myös vianetsintää. <strong>149 €</strong></p>
+            </div>
+            <div class="product-item">
+                <h3>Vikojen ja häiriöiden korjaus</h3>
+                <p>Korjaamme laitteiden ja ohjelmistojen virheet ja päivitämme järjestelmiäsi. <strong>129 €</strong></p>
+            </div>
+            <div class="product-item">
+                <h3>Puhelintuki</h3>
+                <p>Puhelimen asennus, yhteyden luominen perheeseen ja sovellusten opastus. <strong>89 €</strong></p>
+            </div>
+            <div class="product-item">
+                <h3>Etäseuranta ja -tuki ikäihmisille</h3>
+                <p>Asennamme etäseurantajärjestelmän ja muistutukset lääkkeistä. <strong>149 €</strong></p>
+            </div>
+        </div>
+
+        <!-- Uudet kuukausipalvelut -->
+        <h2>Kuukausipalvelut</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <h3>Kuukausipalvelu: Kotiverkon ylläpito</h3>
+                <p>Kuukausittainen tuki ja ylläpito kotiverkkojen, WiFi:n ja laitteiden toimivuudelle. <strong>15 €/kk</strong></p>
+            </div>
+            <div class="product-item">
+                <h3>Kuukausipalvelu: Etäseuranta ja -tuki</h3>
+                <p>Kuukausittainen etäseuranta, muistutukset lääkkeistä ja apu videopuheluilla. <strong>20 €/kk</strong></p>
+            </div>
+            <div class="product-item">
+                <h3>Kuukausipalvelu: Tietokoneen ja laitteen tuki</h3>
+                <p>Kuukausittainen etätuki tietokoneen ja muiden laitteiden vianetsintään ja päivityksiin. <strong>25 €/kk</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Digitalkkari | <a href="mailto:info@digitalkkari.fi">info@digitalkkari.fi</a></p>
+    </footer>
+
+</body>
+</html>
