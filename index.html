@@ -52,35 +52,8 @@
         }
 
         .logo-container img {
-            max-width: 57.5%; /* Logon koko kasvatettu 15% */
+            max-width: 57.5%; /* Same size as index page logo */
             height: auto;
-        }
-
-        .service-info {
-            background-color: #F5F6E9; /* Vaaleanvihreä tausta */
-            padding: 20px 0;
-            font-size: 1.2rem;
-            color: #4C4F45;
-            margin-top: 30px;
-        }
-
-        .main-content {
-            padding: 50px 20px;
-        }
-
-        .service-info h2 {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        .service-info ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .service-info ul li {
-            font-size: 1rem;
-            margin-bottom: 10px;
         }
 
         .contact-buttons {
@@ -107,6 +80,42 @@
         .contact-btn:hover {
             background-color: #333;
             color: #F5F6E9;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 40px;
+        }
+
+        .product-box {
+            background-color: #F5F6E9;
+            width: 200px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .product-box h3 {
+            color: #4C4F45;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .product-box p {
+            color: #4C4F45;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .product-box span {
+            font-weight: bold;
+            color: #4C4F45;
+            font-size: 1.5rem;
         }
 
         footer {
@@ -164,22 +173,37 @@
         <p>Kun teknologia takkuaa – helposti, nopeasti ja edullisesti</p>
     </header>
 
-    <div class="service-info">
-        <h2>Paketoidut tuotteet ja palvelut</h2>
-        <ul>
-            <li><strong>Kotiverkko kuntoon:</strong> Verkon ja laitteiden ongelmanratkaisu, asennus ja konfigurointi.</li>
-            <li><strong>Seniorin puhelinapu:</strong> Ohjeet ja opastus puhelimien käytössä senioreille.</li>
-            <li><strong>Puhelinpaketti:</strong> Käytön opastus ja asennus puhelimiin ja laitteisiin.</li>
-            <li><strong>Varmuuskopiointi ja tietoturva:</strong> Varmuuskopiointiratkaisut ja tietoturvan parantaminen.</li>
-        </ul>
+    <div class="contact-buttons">
+        <a href="https://wa.me/358XXXXXXXXX" class="contact-btn">Lähetä WhatsApp</a>
+        <a href="https://calendly.com/your-calendar-link" class="contact-btn">Varaa Aika</a>
+        <a href="mailto:info@digitalkkari.fi" class="contact-btn">Lähetä Sähköposti</a>
+        <a href="tel:+358XXXXXXXX" class="contact-btn">Soita</a>
     </div>
 
-    <div class="main-content">
-        <div class="contact-buttons">
-            <a href="https://wa.me/358XXXXXXXXX" class="contact-btn">Lähetä WhatsApp</a>
-            <a href="https://calendly.com/your-calendar-link" class="contact-btn">Varaa Aika</a>
-            <a href="mailto:info@digitalkkari.fi" class="contact-btn">Lähetä Sähköposti</a>
-            <a href="tel:+358XXXXXXXX" class="contact-btn">Soita</a>
+    <!-- Products -->
+    <div class="product-container">
+        <div class="product-box">
+            <h3>Kotiverkko kuntoon</h3>
+            <p>Verkon ja laitteiden ongelmanratkaisu, asennus ja konfigurointi.</p>
+            <span>€49</span>
+        </div>
+
+        <div class="product-box">
+            <h3>Seniorin puhelinapu</h3>
+            <p>Opastus ja neuvonta puhelimien käytössä senioreille.</p>
+            <span>€39</span>
+        </div>
+
+        <div class="product-box">
+            <h3>Puhelinpaketti</h3>
+            <p>Käytön opastus ja asennus puhelimiin ja laitteisiin.</p>
+            <span>€59</span>
+        </div>
+
+        <div class="product-box">
+            <h3>Varmuuskopiointi ja tietoturva</h3>
+            <p>Varmuuskopiointiratkaisut ja tietoturvan parantaminen.</p>
+            <span>€79</span>
         </div>
     </div>
 
