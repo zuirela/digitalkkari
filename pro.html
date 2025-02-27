@@ -16,17 +16,6 @@
             background-color: #0a0a0a; /* Musta premium-tausta */
             color: #f5f5f5;
             text-align: center;
-            position: relative;
-        }
-
-        .logo-container {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-        }
-
-        .logo {
-            width: 120px;
         }
 
         .hero {
@@ -54,6 +43,48 @@
             color: #b5b5b5;
         }
 
+        .services {
+            max-width: 1000px;
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #d4af37;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .service {
+            background: #1b1b1b;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+            transition: 0.3s;
+        }
+
+        .service:hover {
+            transform: translateY(-3px);
+        }
+
+        .service h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        .service p {
+            font-size: 0.9rem;
+            color: #c8c8c8;
+        }
+
         footer {
             text-align: center;
             padding: 15px;
@@ -66,11 +97,6 @@
 </head>
 <body>
 
-    <!-- Logo oikeaan yläkulmaan -->
-    <div class="logo-container">
-        <img src="digivalmentaja_logo_vaakuna_v2.png" alt="DigiValmentaja Logo" class="logo">
-    </div>
-
     <!-- Hero Section -->
     <div class="hero">
         <div>
@@ -79,8 +105,34 @@
         </div>
     </div>
 
+    <div class="services">
+        <h2>DigiValmentaja-palvelut</h2>
+        <div class="service-grid">
+            <div class="service">
+                <h3>DigiTuki Start</h3>
+                <p>1 x 45 min IT-tuki 📞💻 + WhatsApp-tuki. <strong>79 €/kk</strong></p>
+            </div>
+            <div class="service">
+                <h3>DigiTuki Pro</h3>
+                <p>2 x 60 min IT-tuki 📞💻 + nopea vasteaika (24h). <strong>199 €/kk</strong></p>
+            </div>
+            <div class="service">
+                <h3>DigiTuki Premium</h3>
+                <p>Rajaton IT-tuki, 4h vasteaika + tietoturvavalvonta. <strong>399 €/kk</strong></p>
+            </div>
+            <div class="service">
+                <h3>Trading-tietokoneen optimointi</h3>
+                <p>Huippunopeus ja turvallisuus kauppiaille. <strong>199 €</strong></p>
+            </div>
+            <div class="service">
+                <h3>Pilvipalveluiden hallinta</h3>
+                <p>Google Workspace, M365, tietoturva. <strong>99 €/kk</strong></p>
+            </div>
+        </div>
+    </div>
+
     <footer>
-        <p>© 2024 DigiValmentaja | info@digitalkkari.fi</p>
+        <p>© 2024 DigiValmentaja | <a href="mailto:info@digitalkkari.fi" style="color: white;">info@digitalkkari.fi</a></p>
     </footer>
 
 </body>

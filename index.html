@@ -11,34 +11,11 @@
             box-sizing: border-box;
             font-family: 'Arial', sans-serif;
         }
-        
+
         body {
             background-color: #0d1b16; /* Tumma vihreä */
             color: #f5f5f5;
             text-align: center;
-            position: relative;
-        }
-
-        .logo {
-            margin: 20px;
-            width: 150px;
-        }
-
-        .premium-btn {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            background: #d4af37;
-            color: black;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: 0.3s ease-in-out;
-        }
-
-        .premium-btn:hover {
-            opacity: 0.8;
         }
 
         .hero {
@@ -66,6 +43,32 @@
             color: #b0c4de;
         }
 
+        .products {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #08120e;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product-item {
+            background-color: #1b1b1b;
+            color: #fff;
+            width: 250px;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+        }
+
+        .product-item h3 {
+            font-size: 1.3rem;
+        }
+
         footer {
             text-align: center;
             padding: 15px;
@@ -73,16 +76,9 @@
             color: white;
             margin-top: 30px;
         }
-
     </style>
 </head>
 <body>
-
-    <!-- Premium-painike oikeaan yläkulmaan -->
-    <a href="pro.html" class="premium-btn">⭐ DigiValmentaja</a>
-
-    <!-- Logo -->
-    <img src="digitalkkari_logo_v3.png" alt="Digitalkkari Logo" class="logo">
 
     <!-- Hero Section -->
     <div class="hero">
@@ -92,8 +88,34 @@
         </div>
     </div>
 
+    <div class="products">
+        <h2>Tuotteet ja palvelut</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <h3>DigiTuki Start</h3>
+                <p>1 x 45 min IT-tuki 📞💻 + WhatsApp-tuki. <strong>79 €/kk</strong></p>
+            </div>
+            <div class="product-item">
+                <h3>DigiTuki Pro</h3>
+                <p>2 x 60 min IT-tuki 📞💻 + nopea vasteaika (24h). <strong>199 €/kk</strong></p>
+            </div>
+            <div class="product-item">
+                <h3>DigiTuki Premium</h3>
+                <p>Rajaton IT-tuki, 4h vasteaika + tietoturvavalvonta. <strong>399 €/kk</strong></p>
+            </div>
+            <div class="product-item">
+                <h3>Trading-tietokoneen optimointi</h3>
+                <p>Huippunopeus ja turvallisuus kauppiaille. <strong>199 €</strong></p>
+            </div>
+            <div class="product-item">
+                <h3>Pilvipalveluiden hallinta</h3>
+                <p>Google Workspace, M365, tietoturva. <strong>99 €/kk</strong></p>
+            </div>
+        </div>
+    </div>
+
     <footer>
-        <p>© 2024 Digitalkkari | info@digitalkkari.fi</p>
+        <p>© 2024 Digitalkkari | <a href="mailto:info@digitalkkari.fi" style="color: white;">info@digitalkkari.fi</a></p>
     </footer>
 
 </body>
