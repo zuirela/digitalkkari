@@ -15,11 +15,23 @@
         body {
             background-color: #0a0a0a; /* Musta premium-tausta */
             color: #f5f5f5;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        .logo {
+            width: 120px;
         }
 
         .hero {
-            background: url('https://source.unsplash.com/1600x900/?business,technology,cybersecurity') no-repeat center center/cover;
-            height: 70vh;
+            background: url('https://source.unsplash.com/1600x900/?business,technology') no-repeat center center/cover;
+            height: 60vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -33,38 +45,13 @@
         .hero h1 {
             font-size: 2.5rem;
             font-weight: bold;
-            color: #d4af37; /* Kultainen */
+            color: #d4af37;
         }
 
         .hero p {
             font-size: 1rem;
             margin: 10px 0;
             color: #b5b5b5;
-        }
-
-        .cta-buttons {
-            margin-top: 15px;
-        }
-
-        .cta {
-            display: inline-block;
-            padding: 12px 20px;
-            font-size: 16px;
-            margin: 5px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: 0.3s ease-in-out;
-        }
-
-        .cta-primary { background: #d4af37; color: black; } /* Kultainen */
-        .cta-secondary { background: #ff5733; color: white; } /* Oranssi */
-        .cta-whatsapp { background: #25d366; color: white; } /* WhatsApp vihreä */
-        .cta-booking { background: #007bff; color: white; } /* Sininen */
-
-        .cta:hover {
-            transform: translateY(-2px);
-            opacity: 0.9;
         }
 
         .services {
@@ -121,16 +108,16 @@
 </head>
 <body>
 
+    <!-- Logo oikeaan yläkulmaan -->
+    <div class="logo-container">
+        <img src="digivalmentaja_logo_vaakuna_v2.png" alt="DigiValmentaja Logo" class="logo">
+    </div>
+
+    <!-- Hero Section -->
     <div class="hero">
         <div>
             <h1>DigiValmentaja</h1>
             <p>Premium IT-palvelut yrityksille, sijoittajille ja vaativille käyttäjille.</p>
-            <div class="cta-buttons">
-                <a href="tel:+358401234567" class="cta cta-secondary">📞 Soita</a>
-                <a href="mailto:info@digitalkkari.fi" class="cta cta-primary">📩 Sähköposti</a>
-                <a href="https://wa.me/358401234567" class="cta cta-whatsapp">💬 WhatsApp</a>
-                <a href="varaa.html" class="cta cta-booking">📅 Varaa aika</a>
-            </div>
         </div>
     </div>
 
@@ -150,16 +137,8 @@
                 <p>Rajaton IT-tuki, 4h vasteaika + tietoturvavalvonta. <strong>399 €/kk</strong></p>
             </div>
             <div class="service">
-                <h3>Turvallinen etäyhteys & VPN</h3>
-                <p>Suojattu yhteys työskentelyyn. <strong>149 €</strong></p>
-            </div>
-            <div class="service">
                 <h3>Trading-tietokoneen optimointi</h3>
                 <p>Huippunopeus ja turvallisuus kauppiaille. <strong>199 €</strong></p>
-            </div>
-            <div class="service">
-                <h3>Kryptovaluutta-turvallisuus</h3>
-                <p>Varojen säilytys ja suojaukset. <strong>299 €</strong></p>
             </div>
             <div class="service">
                 <h3>Pilvipalveluiden hallinta</h3>
