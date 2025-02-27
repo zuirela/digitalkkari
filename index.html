@@ -53,16 +53,18 @@
             font-size: 18px;
             margin: 10px;
             text-decoration: none;
-            border-radius: 5px;
-            transition: 0.3s;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
         }
 
-        .cta-primary { background: #5086e6; color: white; } /* Pehmeä sininen */
-        .cta-secondary { background: #5abf90; color: white; } /* Pehmeä vihreä */
-        .cta-pro { background: #d4af37; color: black; font-weight: bold; } /* Premium-kultainen */
+        .cta-primary { background: #5086e6; color: white; box-shadow: 0px 4px 10px rgba(80, 134, 230, 0.5); } /* Pehmeä sininen */
+        .cta-secondary { background: #5abf90; color: white; box-shadow: 0px 4px 10px rgba(90, 191, 144, 0.5); } /* Pehmeä vihreä */
+        .cta-premium { background: #d4af37; color: black; box-shadow: 0px 4px 10px rgba(212, 175, 55, 0.5); } /* Kultainen premium-väri */
 
         .cta:hover {
-            opacity: 0.8;
+            transform: translateY(-3px);
+            opacity: 0.9;
         }
 
         /* Services section */
@@ -130,7 +132,7 @@
             <div class="cta-buttons">
                 <a href="tel:+358401234567" class="cta cta-secondary">📞 Soita 040 123 4567</a>
                 <a href="mailto:info@digitalkkari.fi" class="cta cta-primary">📩 Lähetä sähköpostia</a>
-                <a href="pro.html" class="cta cta-pro">🔗 Yrittäjille & sijoittajille</a>
+                <a href="pro.html" class="cta cta-premium">⭐ Premium-palvelu</a>
             </div>
         </div>
     </div>
@@ -150,6 +152,18 @@
             <div class="service">
                 <h3>Senioriapu: Digilaitteet haltuun</h3>
                 <p>Selkeää opastusta älypuhelimen ja tietokoneen käyttöön. <strong>59 €</strong></p>
+            </div>
+            <div class="service">
+                <h3>Älypuhelimen käyttöönotto</h3>
+                <p>Opastan uuden älypuhelimen käytön alusta loppuun. <strong>49 €</strong></p>
+            </div>
+            <div class="service">
+                <h3>Tietoturvatarkistus</h3>
+                <p>Käyn läpi tietoturvan & päivitän laitteesi turvallisiksi. <strong>79 €</strong></p>
+            </div>
+            <div class="service">
+                <h3>Verkkoshoppailu & verkkopankkiopastus</h3>
+                <p>Turvallinen ostaminen ja verkkopankin käyttö helposti. <strong>59 €</strong></p>
             </div>
         </div>
     </div>
