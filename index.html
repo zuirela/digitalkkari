@@ -43,6 +43,51 @@
             color: #b0c4de;
         }
 
+        .contact-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .contact-btn {
+            padding: 10px 15px;
+            background-color: #d4af37;
+            color: black;
+            border-radius: 6px;
+            margin: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-btn img {
+            margin-right: 8px;
+            width: 20px;
+        }
+
+        .premium-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #d4af37;
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #08120e;
+            color: white;
+            margin-top: 30px;
+        }
+
         .products {
             margin-top: 40px;
             padding: 20px;
@@ -69,35 +114,12 @@
             font-size: 1.3rem;
         }
 
-        .contact-buttons {
-            margin-top: 30px;
-        }
-
-        .contact-btn {
-            padding: 10px 15px;
-            background-color: #d4af37;
-            color: black;
-            border-radius: 6px;
-            margin: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .contact-btn:hover {
-            opacity: 0.8;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #08120e;
-            color: white;
-            margin-top: 30px;
-        }
-
     </style>
 </head>
 <body>
+
+    <!-- Premium-sivun linkki oikeassa yläkulmassa -->
+    <a href="pro.html" class="premium-btn">⭐ DigiValmentaja</a>
 
     <!-- Hero Section -->
     <div class="hero">
@@ -105,6 +127,22 @@
             <h1>Digitalkkari</h1>
             <p>Apua silloin, kun teknologia takkuaa – helposti, nopeasti ja edullisesti.</p>
         </div>
+    </div>
+
+    <!-- Yhteydenottopainikkeet heti otsikon jälkeen -->
+    <div class="contact-buttons">
+        <a href="https://wa.me/358XXXXXXXXX" class="contact-btn">
+            <img src="whatsapp-icon.png" alt="WhatsApp"> Lähetä WhatsApp
+        </a>
+        <a href="https://calendly.com/your-calendar-link" class="contact-btn">
+            <img src="calendar-icon.png" alt="Varaa Aika"> Varaa Aika
+        </a>
+        <a href="mailto:info@digitalkkari.fi" class="contact-btn">
+            <img src="email-icon.png" alt="Sähköposti"> Lähetä Sähköposti
+        </a>
+        <a href="tel:+358XXXXXXXX" class="contact-btn">
+            <img src="phone-icon.png" alt="Soita"> Soita
+        </a>
     </div>
 
     <div class="products">
@@ -135,14 +173,6 @@
                 <p>Etäseurantaohjelmointi, lääkkeiden muistutusjärjestelmä, tuki videopuheluilla. <strong>Hinta: 149 €</strong></p>
             </div>
         </div>
-    </div>
-
-    <!-- Yhteydenottopainikkeet -->
-    <div class="contact-buttons">
-        <a href="https://wa.me/358XXXXXXXXX" class="contact-btn">Lähetä WhatsApp</a>
-        <a href="https://calendly.com/your-calendar-link" class="contact-btn">Varaa Aika</a>
-        <a href="mailto:info@digitalkkari.fi" class="contact-btn">Lähetä Sähköposti</a>
-        <a href="tel:+358XXXXXXXX" class="contact-btn">Soita</a>
     </div>
 
     <footer>
