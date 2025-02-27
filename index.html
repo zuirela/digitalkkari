@@ -3,180 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digitalkkari – Apua silloin, kun teknologia takkuaa</title>
+    <title>Digitalkkari – Teknologiapalvelut</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Helvetica', 'Arial', sans-serif;
         }
 
         body {
-            background-color: #0d1b16; /* Tumma vihreä */
-            color: #f5f5f5;
+            background-color: #1d2d2d; /* Tumma tausta */
+            color: #fff;
             text-align: center;
+            font-size: 16px;
+            line-height: 1.5;
         }
 
-        .hero {
-            background: url('https://source.unsplash.com/1600x900/?technology,computer') no-repeat center center/cover;
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            padding: 15px;
-            background-blend-mode: overlay;
-            background-color: rgba(10, 30, 20, 0.7);
+        header {
+            padding: 40px 0;
+            background-color: #2f3e3e;
         }
 
-        .hero h1 {
+        header h1 {
             font-size: 2.5rem;
-            font-weight: bold;
-            color: #dce5ff;
+            color: #d4af37;
+            margin-bottom: 10px;
         }
 
-        .hero p {
-            font-size: 1rem;
-            margin: 10px 0;
-            color: #b0c4de;
+        header p {
+            font-size: 1.1rem;
+            color: #b0b0b0;
         }
 
-        .contact-buttons {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .contact-btn {
-            padding: 10px 15px;
-            background-color: #d4af37;
-            color: black;
-            border-radius: 6px;
-            margin: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .contact-btn img {
-            margin-right: 8px;
-            width: 20px;
-        }
-
-        .premium-btn {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: #d4af37;
-            color: black;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #08120e;
-            color: white;
-            margin-top: 30px;
-        }
-
-        .products {
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #08120e;
+        .main-content {
+            padding: 50px 20px;
         }
 
         .product-list {
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
-            justify-content: space-around;
+            margin-top: 40px;
         }
 
         .product-item {
-            background-color: #1b1b1b;
-            color: #fff;
+            background-color: #333;
             width: 250px;
-            padding: 15px;
-            margin: 10px;
+            margin: 15px;
+            padding: 20px;
             border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
         }
 
         .product-item h3 {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #d4af37;
         }
 
+        .product-item p {
+            font-size: 1rem;
+            color: #b0b0b0;
+            margin-bottom: 15px;
+        }
+
+        .product-item strong {
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
+        .contact-buttons {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .contact-btn {
+            padding: 12px 20px;
+            background-color: #d4af37;
+            color: black;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            background-color: #b68b2d;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #2f3e3e;
+            color: #b0b0b0;
+        }
+
+        footer a {
+            color: #d4af37;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Premium-sivun linkki oikeassa yläkulmassa -->
-    <a href="pro.html" class="premium-btn">⭐ DigiValmentaja</a>
+    <header>
+        <h1>Digitalkkari</h1>
+        <p>Apua silloin, kun teknologia takkuaa – helposti, nopeasti ja edullisesti.</p>
+    </header>
 
-    <!-- Hero Section -->
-    <div class="hero">
-        <div>
-            <h1>Digitalkkari</h1>
-            <p>Apua silloin, kun teknologia takkuaa – helposti, nopeasti ja edullisesti.</p>
-        </div>
-    </div>
-
-    <!-- Yhteydenottopainikkeet heti otsikon jälkeen -->
-    <div class="contact-buttons">
-        <a href="https://wa.me/358XXXXXXXXX" class="contact-btn">
-            <img src="whatsapp-icon.png" alt="WhatsApp"> Lähetä WhatsApp
-        </a>
-        <a href="https://calendly.com/your-calendar-link" class="contact-btn">
-            <img src="calendar-icon.png" alt="Varaa Aika"> Varaa Aika
-        </a>
-        <a href="mailto:info@digitalkkari.fi" class="contact-btn">
-            <img src="email-icon.png" alt="Sähköposti"> Lähetä Sähköposti
-        </a>
-        <a href="tel:+358XXXXXXXX" class="contact-btn">
-            <img src="phone-icon.png" alt="Soita"> Soita
-        </a>
-    </div>
-
-    <div class="products">
-        <h2>Digitalkkari Paketoidut Tuotteet</h2>
+    <div class="main-content">
+        <h2>Paketoidut Tuotteet ja Palvelut</h2>
+        
         <div class="product-list">
             <div class="product-item">
-                <h3>Kotiverkon ja WiFi-tuki paketti</h3>
-                <p>Kotiverkon optimointi ja Wi-Fi-verkon asennus, vianetsintä ja laitteiden yhdistäminen. <strong>Hinta: 99 €</strong></p>
+                <h3>Kotiverkon ja WiFi-tuki</h3>
+                <p>Optimoimme kotiverkkosi ja Wi-Fi-signaalisi parhaaksi mahdolliseksi. <strong>99 €</strong></p>
             </div>
             <div class="product-item">
-                <h3>Tietokoneen ja laitteen tuki paketti</h3>
-                <p>Tietokoneen ja tablettien asennus, perustoimintojen opastus ja vianetsintä. <strong>Hinta: 149 €</strong></p>
+                <h3>Tietokoneen ja laitteen tuki</h3>
+                <p>Asennamme ja päivitämme laitteesi. Tarjoamme myös vianetsintää. <strong>149 €</strong></p>
             </div>
             <div class="product-item">
-                <h3>Vikojen ja häiriöiden korjaus paketti</h3>
-                <p>Laitevikojen tarkastus ja korjaus, ohjelmistopäivitykset, virustorjunnan asennus. <strong>Hinta: 129 €</strong></p>
+                <h3>Vikojen ja häiriöiden korjaus</h3>
+                <p>Korjaamme laitteiden ja ohjelmistojen virheet ja päivitämme järjestelmiäsi. <strong>129 €</strong></p>
             </div>
             <div class="product-item">
-                <h3>Ohjeistus ja opastus paketti</h3>
-                <p>Yksilöllinen opastus tietokoneiden, älypuhelimien ja muiden laitteiden käytössä. <strong>Hinta: 79 €</strong></p>
+                <h3>Puhelintuki</h3>
+                <p>Puhelimen asennus, yhteyden luominen perheeseen ja sovellusten opastus. <strong>89 €</strong></p>
             </div>
             <div class="product-item">
-                <h3>Puhelintuki paketti</h3>
-                <p>Puhelimen asennus, yhteyden luominen perheeseen, käyttöohjeet ja sovellusten opastus. <strong>Hinta: 89 €</strong></p>
+                <h3>Etäseuranta ja -tuki ikäihmisille</h3>
+                <p>Asennamme etäseurantajärjestelmän ja muistutukset lääkkeistä. <strong>149 €</strong></p>
             </div>
-            <div class="product-item">
-                <h3>Etäseuranta ja -tuki paketti ikäihmisille</h3>
-                <p>Etäseurantaohjelmointi, lääkkeiden muistutusjärjestelmä, tuki videopuheluilla. <strong>Hinta: 149 €</strong></p>
-            </div>
+        </div>
+
+        <div class="contact-buttons">
+            <a href="https://wa.me/358XXXXXXXXX" class="contact-btn">Lähetä WhatsApp</a>
+            <a href="https://calendly.com/your-calendar-link" class="contact-btn">Varaa Aika</a>
+            <a href="mailto:info@digitalkkari.fi" class="contact-btn">Lähetä Sähköposti</a>
+            <a href="tel:+358XXXXXXXX" class="contact-btn">Soita</a>
         </div>
     </div>
 
     <footer>
-        <p>© 2024 Digitalkkari | <a href="mailto:info@digitalkkari.fi" style="color: white;">info@digitalkkari.fi</a></p>
+        <p>© 2024 Digitalkkari | <a href="mailto:info@digitalkkari.fi">info@digitalkkari.fi</a></p>
     </footer>
 
 </body>
