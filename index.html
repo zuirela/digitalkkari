@@ -5,16 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digitalkkari – Apua silloin, kun teknologia takkuaa</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 40px; background-color: #f8f9fa; }
-        h1 { color: #007bff; }
-        h2 { color: #343a40; }
-        p { font-size: 18px; color: #333; }
-        .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }
-        .button { display: block; margin: 10px auto; padding: 15px; font-size: 18px; border-radius: 5px; text-decoration: none; color: white; text-align: center; width: 80%; max-width: 300px; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #007bff;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 15px 0;
+            color: #555;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
         .call { background-color: #28a745; }
         .email { background-color: #007bff; }
         .order { background-color: #ff9800; }
-        .service-box { background: #f1f1f1; padding: 15px; margin: 10px 0; border-radius: 5px; }
+
+        .button:hover {
+            opacity: 0.8;
+        }
+
+        .service-box {
+            background: #f1f1f1;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            text-align: left;
+        }
+
+        .service-box h3 {
+            color: #333;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
     </style>
 </head>
 <body>
@@ -63,8 +123,9 @@
             <a class="button order" href="#">Tilaa</a>
         </div>
 
-        <p><strong>📌 Ota yhteyttä ja kysy lisää!</strong></p>
+        <footer>
+            <p>© 2024 Digitalkkari | Yhteystiedot: info@digitalkkari.fi</p>
+        </footer>
     </div>
 </body>
 </html>
-
