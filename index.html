@@ -13,157 +13,154 @@
         }
         
         body {
-            background-color: #1a1e2b; /* Pehmeä tummansininen */
+            background-color: #0d1b16; /* Tumma vihreä */
             color: #f5f5f5;
         }
 
-        /* Hero section */
         .hero {
-            background: url('https://source.unsplash.com/1600x900/?technology,computer,blue') no-repeat center center/cover;
-            height: 80vh;
+            background: url('https://source.unsplash.com/1600x900/?technology,computer') no-repeat center center/cover;
+            height: 70vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             color: white;
-            padding: 20px;
+            padding: 15px;
             background-blend-mode: overlay;
-            background-color: rgba(20, 25, 40, 0.7); /* Tumma pehmennys */
+            background-color: rgba(10, 30, 20, 0.7);
         }
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: bold;
-            color: #dce5ff; /* Vaaleansininen */
+            color: #dce5ff;
         }
 
         .hero p {
-            font-size: 1.2rem;
-            margin: 15px 0;
-            color: #b0c4de; /* Pehmeä harmaansininen */
+            font-size: 1rem;
+            margin: 10px 0;
+            color: #b0c4de;
         }
 
         .cta-buttons {
-            margin-top: 20px;
+            margin-top: 15px;
         }
 
         .cta {
             display: inline-block;
-            padding: 15px 25px;
-            font-size: 18px;
-            margin: 10px;
+            padding: 12px 20px;
+            font-size: 16px;
+            margin: 5px;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 6px;
             font-weight: bold;
             transition: 0.3s ease-in-out;
         }
 
-        .cta-primary { background: #5086e6; color: white; box-shadow: 0px 4px 10px rgba(80, 134, 230, 0.5); } /* Pehmeä sininen */
-        .cta-secondary { background: #5abf90; color: white; box-shadow: 0px 4px 10px rgba(90, 191, 144, 0.5); } /* Pehmeä vihreä */
-        .cta-premium { background: #d4af37; color: black; box-shadow: 0px 4px 10px rgba(212, 175, 55, 0.5); } /* Kultainen premium-väri */
+        .cta-primary { background: #ffba08; color: black; } /* Keltainen */
+        .cta-secondary { background: #ff5733; color: white; } /* Oranssi */
+        .cta-whatsapp { background: #25d366; color: white; } /* WhatsApp vihreä */
+        .cta-booking { background: #007bff; color: white; } /* Sininen */
 
         .cta:hover {
-            transform: translateY(-3px);
+            transform: translateY(-2px);
             opacity: 0.9;
         }
 
-        /* Services section */
         .services {
-            max-width: 1100px;
-            margin: 50px auto;
+            max-width: 1000px;
+            margin: 30px auto;
             text-align: center;
         }
 
         .services h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
+            font-size: 2rem;
+            margin-bottom: 10px;
             color: #dce5ff;
         }
 
         .service-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
         }
 
         .service {
-            background: #232a3b; /* Pehmeä tummansininen */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+            background: #122c23;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
             transition: 0.3s;
         }
 
         .service:hover {
-            transform: translateY(-5px);
-            box-shadow: 0px 6px 15px rgba(255,255,255,0.2);
+            transform: translateY(-3px);
         }
 
         .service h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
+            font-size: 1.2rem;
+            margin-bottom: 5px;
             color: #ffffff;
         }
 
         .service p {
-            font-size: 1rem;
+            font-size: 0.9rem;
             color: #c8d0e0;
         }
 
-        /* Footer */
         footer {
             text-align: center;
-            padding: 20px;
-            background: #181c27; /* Tumma pehmeä tausta */
+            padding: 15px;
+            background: #08120e;
             color: white;
-            margin-top: 50px;
+            margin-top: 30px;
         }
 
     </style>
 </head>
 <body>
 
-    <!-- Hero Section -->
     <div class="hero">
         <div>
             <h1>Digitalkkari</h1>
             <p>Apua silloin, kun teknologia takkuaa – helposti, nopeasti ja edullisesti.</p>
             <div class="cta-buttons">
-                <a href="tel:+358401234567" class="cta cta-secondary">📞 Soita 040 123 4567</a>
-                <a href="mailto:info@digitalkkari.fi" class="cta cta-primary">📩 Lähetä sähköpostia</a>
-                <a href="pro.html" class="cta cta-premium">⭐ Premium-palvelu</a>
+                <a href="tel:+358401234567" class="cta cta-secondary">📞 Soita</a>
+                <a href="mailto:info@digitalkkari.fi" class="cta cta-primary">📩 Sähköposti</a>
+                <a href="https://wa.me/358401234567" class="cta cta-whatsapp">💬 WhatsApp</a>
+                <a href="varaa.html" class="cta cta-booking">📅 Varaa aika</a>
+                <a href="pro.html" class="cta cta-primary">⭐ Premium-palvelu</a>
             </div>
         </div>
     </div>
 
-    <!-- Services Section -->
     <div class="services">
         <h2>Palvelut</h2>
         <div class="service-grid">
             <div class="service">
                 <h3>WiFi & kotiverkko kuntoon</h3>
-                <p>Optimoin WiFi-yhteytesi nopeammaksi ja vakaammaksi. <strong>69 €</strong></p>
+                <p>Nopea ja vakaa netti koko kotiin. <strong>69 €</strong></p>
             </div>
             <div class="service">
                 <h3>Uusi tietokone käyttövalmiiksi</h3>
-                <p>Asennan tietokoneesi ja siirrän tärkeät tiedostosi. <strong>89 €</strong></p>
+                <p>Asennukset ja siirrot. <strong>89 €</strong></p>
             </div>
             <div class="service">
                 <h3>Senioriapu: Digilaitteet haltuun</h3>
-                <p>Selkeää opastusta älypuhelimen ja tietokoneen käyttöön. <strong>59 €</strong></p>
+                <p>Helppoa opastusta älylaitteisiin. <strong>59 €</strong></p>
             </div>
             <div class="service">
                 <h3>Älypuhelimen käyttöönotto</h3>
-                <p>Opastan uuden älypuhelimen käytön alusta loppuun. <strong>49 €</strong></p>
+                <p>Asetukset & tietoturva kuntoon. <strong>49 €</strong></p>
             </div>
             <div class="service">
                 <h3>Tietoturvatarkistus</h3>
-                <p>Käyn läpi tietoturvan & päivitän laitteesi turvallisiksi. <strong>79 €</strong></p>
+                <p>Suojataan laitteet & salasanat. <strong>79 €</strong></p>
             </div>
             <div class="service">
                 <h3>Verkkoshoppailu & verkkopankkiopastus</h3>
-                <p>Turvallinen ostaminen ja verkkopankin käyttö helposti. <strong>59 €</strong></p>
+                <p>Turvallinen maksaminen netissä. <strong>59 €</strong></p>
             </div>
         </div>
     </div>
