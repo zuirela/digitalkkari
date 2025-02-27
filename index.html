@@ -173,6 +173,28 @@
                 font-size: 0.9rem;
             }
         }
+
+        /* Digivalmentaja linkki oikeaan yläkulmaan */
+        .pro-link {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #F5F6E9;
+            color: #4C4F45;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .pro-link:hover {
+            background-color: #333;
+            color: #F5F6E9;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
     </style>
 </head>
 <body>
@@ -187,16 +209,17 @@
         <p>Apua kun teknologia takkuaa – helposti, nopeasti ja edullisesti</p>
     </header>
 
+    <!-- Slogan -->
+    <div class="slogan">
+        Etänä tai paikanpäällä, valitse itsellesi sopivin tapa!
+    </div>
+
+    <!-- Contact Buttons -->
     <div class="contact-buttons">
         <a href="https://wa.me/358XXXXXXXXX" class="contact-btn">Lähetä WhatsApp</a>
         <a href="https://calendly.com/your-calendar-link" class="contact-btn">Varaa Aika</a>
         <a href="mailto:info@digitalkkari.fi" class="contact-btn">Lähetä Sähköposti</a>
         <a href="tel:+358XXXXXXXX" class="contact-btn">Soita</a>
-    </div>
-
-    <!-- Slogan -->
-    <div class="slogan">
-        Etänä tai paikanpäällä, valitse itsellesi sopivin tapa!
     </div>
 
     <!-- Products -->
@@ -238,6 +261,9 @@
             <span>€39/kk</span>
         </div>
     </div>
+
+    <!-- Digivalmentaja Link (Pro) -->
+    <a href="pro.html" class="pro-link">Digivalmentaja</a>
 
     <footer>
         <p>© 2024 Digitalkkari | <a href="mailto:info@digitalkkari.fi">info@digitalkkari.fi</a></p>
