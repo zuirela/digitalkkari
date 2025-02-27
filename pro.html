@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Henkilökohtainen Digivalmentajasi – Premium IT-palvelut</title>
+    <title>DigiValmentaja - Henkilökohtainen IT-tuki</title>
     <style>
         * {
             margin: 0;
@@ -13,97 +13,83 @@
         }
 
         body {
-            background-color: #F5F6E9; /* Beige tausta */
-            color: #4C4F45; /* Tumma vihreä */
+            background-color: #4C4F45; /* Tumma vihreä tausta */
+            color: #F5F6E9; /* Vaalean beige teksti */
             text-align: center;
             font-size: 16px;
-            line-height: 1.5;
         }
 
         header {
             padding: 60px 0;
-            background-color: #4C4F45; /* Tumma vihreä tausta */
-            color: #F5F6E9; /* Vaalean beige teksti */
+            background-color: #F5F6E9; /* Vaaleampi tausta */
+            color: #4C4F45; /* Tumma vihreä teksti */
             box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            position: relative;
         }
 
         header h1 {
             font-size: 3rem;
-            color: #F5F6E9;
             margin-bottom: 20px;
             font-weight: bold;
-            line-height: 1.3;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            color: #F5F6E9;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .logo-container {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 40px;
         }
 
         .logo-container img {
-            max-width: 50%;
+            max-width: 40%;
             height: auto;
-        }
-
-        .service-info {
-            background-color: #F5F6E9; /* Vaaleanvihreä tausta */
-            padding: 20px 0;
-            font-size: 1.2rem;
-            color: #4C4F45;
-            margin-top: 30px;
         }
 
         .main-content {
             padding: 50px 20px;
         }
 
-        .product-list {
+        .service-info {
+            background-color: #F5F6E9;
+            color: #4C4F45;
+            padding: 20px;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            border-radius: 10px;
+        }
+
+        .service-info h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .service-info ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .service-info ul li {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-buttons {
             display: flex;
             justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
             flex-wrap: wrap;
-            margin-top: 60px;
-            gap: 30px;
         }
 
-        .product-item {
+        .contact-btn {
+            padding: 12px 20px;
+            background-color: #F5F6E9;
+            color: #4C4F45;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .contact-btn:hover {
             background-color: #333;
-            width: 250px;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-            text-align: left;
-            transition: transform 0.3s ease;
-        }
-
-        .product-item:hover {
-            transform: translateY(-10px);
-        }
-
-        .product-item h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
             color: #F5F6E9;
-        }
-
-        .product-item p {
-            font-size: 1rem;
-            color: #F5F6E9;
-            margin-bottom: 15px;
-        }
-
-        .product-item strong {
-            font-size: 1.2rem;
-            color: #fff;
         }
 
         footer {
@@ -123,52 +109,6 @@
             color: #4C4F45;
         }
 
-        .premium-btn {
-            background: #4C4F45;
-            color: #F5F6E9;
-            padding: 12px 18px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            transition: background-color 0.3s ease;
-            font-size: 0.8rem;
-        }
-
-        .premium-btn:hover {
-            background-color: #333;
-        }
-
-        .contact-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
-            flex-wrap: wrap;
-        }
-
-        .contact-btn {
-            padding: 12px 20px;
-            background-color: #4C4F45;
-            color: #F5F6E9;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            display: inline-block;
-            text-align: center;
-            margin: 10px;
-            max-width: 200px;
-            flex: 1 1 auto;
-        }
-
-        .contact-btn:hover {
-            background-color: #333;
-            transform: scale(1.05);
-        }
-
         /* Media Queries for small screens */
         @media (max-width: 768px) {
             header h1 {
@@ -176,7 +116,7 @@
             }
 
             header p {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
 
             .contact-btn {
@@ -189,59 +129,31 @@
                 align-items: center;
             }
 
-            .product-item {
-                width: 100%;
-                max-width: 300px;
-            }
-
-            .product-list {
-                flex-direction: column;
-                align-items: center;
-                gap: 20px;
-            }
-
             footer {
                 font-size: 0.9rem;
             }
         }
-
     </style>
 </head>
 <body>
 
-    <!-- Premium-sivun linkki oikeassa yläkulmassa -->
-    <a href="index.html" class="premium-btn">⭐ Takaisin Digitalkkariin</a>
-
     <!-- Logo -->
-    <div class="logo-container">
-        <img src="dtlogo.png" alt="Digitalkkari Logo">
-    </div>
-
     <header>
+        <div class="logo-container">
+            <img src="dtlogo.png" alt="DigiValmentaja Logo">
+        </div>
         <h1>Henkilökohtainen digivalmentajasi</h1>
-        <p>Tarjoamme premium IT-palvelut ja räätälöidyt ratkaisut – nyt myös nettisivujen teko ja ylläpito.</p>
     </header>
 
-    <div class="service-info">
-        Palvelut etänä tai paikanpäällä, valitse itsellesi sopivin tapa!
-    </div>
-
     <div class="main-content">
-        <h2>Palvelut</h2>
-        
-        <div class="product-list">
-            <div class="product-item">
-                <h3>Henkilökohtainen IT-tuki</h3>
-                <p>Tuki kaikissa teknologia-asioissa: laitteet, ohjelmat, verkot. <strong>99 €/kk</strong></p>
-            </div>
-            <div class="product-item">
-                <h3>Nettisivujen teko & ylläpito</h3>
-                <p>Räätälöidyt nettisivut yrityksellesi, jatkuva tuki ja ylläpito. <strong>199 €/kk</strong></p>
-            </div>
-            <div class="product-item">
-                <h3>Puhelin- ja tietokonesupportti</h3>
-                <p>Vianetsintä ja ratkaisut puhelimille ja tietokoneille. <strong>149 €/kk</strong></p>
-            </div>
+        <div class="service-info">
+            <h2>Henkilökohtaiset IT-palvelut yrityksille ja yksityisille</h2>
+            <ul>
+                <li>Verkon ja laitteiden ongelmanratkaisu</li>
+                <li>Turvallinen datan varmuuskopiointi ja palautus</li>
+                <li>Ohjelmointiin ja teknologian ylläpitoon liittyvä konsultointi</li>
+                <li>Nettisivujen teko ja ylläpito</li>
+            </ul>
         </div>
 
         <div class="contact-buttons">
@@ -253,7 +165,7 @@
     </div>
 
     <footer>
-        <p>© 2024 Digitalkkari | <a href="mailto:info@digitalkkari.fi">info@digitalkkari.fi</a></p>
+        <p>© 2024 DigiValmentaja | <a href="mailto:info@digitalkkari.fi">info@digitalkkari.fi</a></p>
     </footer>
 
 </body>
