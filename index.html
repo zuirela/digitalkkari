@@ -118,9 +118,30 @@
             text-decoration: none;
         }
 
+        /* Premium button - oikeassa yläkulmassa */
+        .premium-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #d4af37;
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            z-index: 10; /* Varmistaa, että painike on päällimmäinen */
+        }
+
+        .premium-btn:hover {
+            background-color: #b68b2d;
+        }
+
     </style>
 </head>
 <body>
+
+    <!-- Premium-sivun linkki oikeassa yläkulmassa -->
+    <a href="pro.html" class="premium-btn">⭐ DigiValmentaja</a>
 
     <header>
         <h1>Digitalkkari</h1>
