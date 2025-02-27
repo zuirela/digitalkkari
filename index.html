@@ -1,25 +1,153 @@
-<div class="products">
-    <h2>Digitalkkari Paketoidut Tuotteet</h2>
-    <div class="product-list">
-        <div class="product-item">
-            <h3>Puhelintuki paketti</h3>
-            <p>Puhelimen asennus, yhteyden luominen perheeseen, käyttöohjeet ja sovellusten opastus. <strong>Hinta: 89 €</strong></p>
-        </div>
-        <div class="product-item">
-            <h3>Kotiverkon ja WiFi-tuki paketti</h3>
-            <p>Kotiverkon optimointi ja Wi-Fi-verkon asennus, vianetsintä ja laitteiden yhdistäminen. <strong>Hinta: 99 €</strong></p>
-        </div>
-        <div class="product-item">
-            <h3>Tietokoneen ja laitteen tuki paketti</h3>
-            <p>Tietokoneen ja tablettien asennus, perustoimintojen opastus ja vianetsintä. <strong>Hinta: 149 €</strong></p>
-        </div>
-        <div class="product-item">
-            <h3>Vikojen ja häiriöiden korjaus paketti</h3>
-            <p>Laitevikojen tarkastus ja korjaus, ohjelmistopäivitykset, virustorjunnan asennus. <strong>Hinta: 129 €</strong></p>
-        </div>
-        <div class="product-item">
-            <h3>Ohjeistus ja opastus paketti</h3>
-            <p>Yksilöllinen opastus tietokoneiden, älypuhelimien ja muiden laitteiden käytössä. <strong>Hinta: 79 €</strong></p>
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitalkkari – Apua silloin, kun teknologia takkuaa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #0d1b16; /* Tumma vihreä */
+            color: #f5f5f5;
+            text-align: center;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?technology,computer') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 15px;
+            background-blend-mode: overlay;
+            background-color: rgba(10, 30, 20, 0.7);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #dce5ff;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            margin: 10px 0;
+            color: #b0c4de;
+        }
+
+        .products {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #08120e;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product-item {
+            background-color: #1b1b1b;
+            color: #fff;
+            width: 250px;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+        }
+
+        .product-item h3 {
+            font-size: 1.3rem;
+        }
+
+        .contact-buttons {
+            margin-top: 30px;
+        }
+
+        .contact-btn {
+            padding: 10px 15px;
+            background-color: #d4af37;
+            color: black;
+            border-radius: 6px;
+            margin: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-btn:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #08120e;
+            color: white;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1>Digitalkkari</h1>
+            <p>Apua silloin, kun teknologia takkuaa – helposti, nopeasti ja edullisesti.</p>
         </div>
     </div>
-</div>
+
+    <div class="products">
+        <h2>Digitalkkari Paketoidut Tuotteet</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <h3>Kotiverkon ja WiFi-tuki paketti</h3>
+                <p>Kotiverkon optimointi ja Wi-Fi-verkon asennus, vianetsintä ja laitteiden yhdistäminen. <strong>Hinta: 99 €</strong></p>
+            </div>
+            <div class="product-item">
+                <h3>Tietokoneen ja laitteen tuki paketti</h3>
+                <p>Tietokoneen ja tablettien asennus, perustoimintojen opastus ja vianetsintä. <strong>Hinta: 149 €</strong></p>
+            </div>
+            <div class="product-item">
+                <h3>Vikojen ja häiriöiden korjaus paketti</h3>
+                <p>Laitevikojen tarkastus ja korjaus, ohjelmistopäivitykset, virustorjunnan asennus. <strong>Hinta: 129 €</strong></p>
+            </div>
+            <div class="product-item">
+                <h3>Ohjeistus ja opastus paketti</h3>
+                <p>Yksilöllinen opastus tietokoneiden, älypuhelimien ja muiden laitteiden käytössä. <strong>Hinta: 79 €</strong></p>
+            </div>
+            <div class="product-item">
+                <h3>Puhelintuki paketti</h3>
+                <p>Puhelimen asennus, yhteyden luominen perheeseen, käyttöohjeet ja sovellusten opastus. <strong>Hinta: 89 €</strong></p>
+            </div>
+            <div class="product-item">
+                <h3>Etäseuranta ja -tuki paketti ikäihmisille</h3>
+                <p>Etäseurantaohjelmointi, lääkkeiden muistutusjärjestelmä, tuki videopuheluilla. <strong>Hinta: 149 €</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Yhteydenottopainikkeet -->
+    <div class="contact-buttons">
+        <a href="https://wa.me/358XXXXXXXXX" class="contact-btn">Lähetä WhatsApp</a>
+        <a href="https://calendly.com/your-calendar-link" class="contact-btn">Varaa Aika</a>
+        <a href="mailto:info@digitalkkari.fi" class="contact-btn">Lähetä Sähköposti</a>
+        <a href="tel:+358XXXXXXXX" class="contact-btn">Soita</a>
+    </div>
+
+    <footer>
+        <p>© 2024 Digitalkkari | <a href="mailto:info@digitalkkari.fi" style="color: white;">info@digitalkkari.fi</a></p>
+    </footer>
+
+</body>
+</html>
