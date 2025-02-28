@@ -22,8 +22,8 @@
 
         header {
             padding: 60px 0;
-            background-color: #4C4F45; /* Tumma vihreä tausta */
-            color: #F5F6E9; /* Vaalean beige teksti */
+            background-color: #F5F6E9; /* Vaalea tausta */
+            color: #4C4F45; /* Tumma vihreä teksti */
             box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
             text-align: center;
             position: relative;
@@ -32,7 +32,7 @@
 
         header h1 {
             font-size: 3rem;
-            color: #F5F6E9;
+            color: #4C4F45;
             margin-bottom: 20px;
             font-weight: bold;
             line-height: 1.3;
@@ -40,7 +40,7 @@
 
         header p {
             font-size: 1.2rem;
-            color: #F5F6E9;
+            color: #4C4F45;
             max-width: 600px;
             margin: 0 auto;
             font-style: italic;
@@ -63,6 +63,14 @@
             .logo-container img {
                 max-width: 50%; /* Logo suurempi kapeilla näytöillä */
             }
+        }
+
+        /* Slogan */
+        .slogan {
+            font-size: 1.2rem;
+            color: #4C4F45;
+            margin-top: 20px;
+            font-style: italic;
         }
 
         .contact-buttons {
@@ -127,13 +135,6 @@
             font-weight: bold;
             color: #4C4F45;
             font-size: 1.5rem;
-        }
-
-        .slogan {
-            font-size: 1.2rem;
-            color: #4C4F45;
-            margin-top: 20px;
-            font-style: italic;
         }
 
         footer {
@@ -209,11 +210,6 @@
 <body>
 
     <!-- Logo -->
-    <header>
-        <h1>Digitalkkari</h1>
-        <p>Apua kun teknologia takkuaa – helposti, nopeasti ja edullisesti</p>
-    </header>
-
     <div class="logo-container">
         <img src="dtlogo.png" alt="Digitalkkari Logo">
     </div>
@@ -225,48 +221,44 @@
 
     <!-- Contact Buttons -->
     <div class="contact-buttons">
-        <a href="https://wa.me/358XXXXXXXXX" class="contact-btn">Lähetä WhatsApp</a>
+        <a href="https://wa.me/358504432500" class="contact-btn">Lähetä WhatsApp</a>
         <a href="https://calendly.com/your-calendar-link" class="contact-btn">Varaa Aika</a>
-        <a href="mailto:info@digitalkkari.fi" class="contact-btn">Lähetä Sähköposti</a>
-        <a href="tel:+358XXXXXXXX" class="contact-btn">Soita</a>
+        <a href="mailto:suomendigitalkkari@gmail.com" class="contact-btn">Lähetä Sähköposti</a>
+        <a href="tel:+358504432500" class="contact-btn">Soita</a>
     </div>
 
+    <!-- Products -->
     <div class="product-container">
-    <!-- WhatsApp-palvelu -->
-    <div class="product-box">
-        <h3>WhatsApp-palvelu</h3>
-        <p>Nopea ja edullinen palvelu, jossa asiakas saa vastauksia ja ohjeita nopeasti ratkaistavaan asiaan. Jos asiakas ei saa apua, palvelu on ilmainen.</p>
-        <span>€9,90 </span>
-    </div>
+        <div class="product-box">
+            <h3>WhatsApp-palvelu</h3>
+            <p>Nopea ja edullinen palvelu, jossa asiakas saa vastauksia ja ohjeita nopeasti ratkaistavaan asiaan. Jos asiakas ei saa apua, palvelu on ilmainen.</p>
+            <span>€9,90</span>
+        </div>
 
-    <!-- Kotiverkon ja laitteiden ongelmanratkaisu -->
-    <div class="product-box">
-        <h3>Kotiverkon ja laitteiden ongelmanratkaisu</h3>
-        <p>Verkon ja laitteiden asennus, ongelmanratkaisu ja konfigurointi kotikäynneillä tai etänä.</p>
-        <span>Alkaen €49</span>
-    </div>
+        <div class="product-box">
+            <h3>Kotiverkon ja laitteiden ongelmanratkaisu</h3>
+            <p>Verkon ja laitteiden asennus, ongelmanratkaisu ja konfigurointi kotikäynneillä tai etänä.</p>
+            <span>Alkaen €49</span>
+        </div>
 
-    <!-- Kuukausipaketit ja jatkuva tuki -->
-    <div class="product-box">
-        <h3>Kuukausipaketit ja jatkuva tuki</h3>
-        <p>Jatkuva tekninen tuki ja neuvonta kuukausimaksulla. Sisältää esimerkiksi säännöllisen etätuen ja laitteiden etäylläpidon.</p>
-        <span>Alkaen €29/kk</span>
-    </div>
+        <div class="product-box">
+            <h3>Kuukausipaketit ja jatkuva tuki</h3>
+            <p>Jatkuva tekninen tuki ja neuvonta kuukausimaksulla. Sisältää esimerkiksi säännöllisen etätuen ja laitteiden etäylläpidon.</p>
+            <span>Alkaen €29/kk</span>
+        </div>
 
-    <!-- Varmuuskopiointi ja tietoturva -->
-    <div class="product-box">
-        <h3>Varmuuskopiointi ja tietoturva</h3>
-        <p>Säännöllinen varmuuskopiointi ja tietoturvapäivitykset.</p>
-        <span>Alkaen €39/kk</span>
+        <div class="product-box">
+            <h3>Varmuuskopiointi ja tietoturva</h3>
+            <p>Säännöllinen varmuuskopiointi ja tietoturvapäivitykset.</p>
+            <span>Alkaen €39/kk</span>
+        </div>
     </div>
-</div>
-
 
     <!-- Digivalmentaja Link (Pro) -->
     <a href="pro.html" class="pro-link">Digivalmentaja</a>
 
     <footer>
-        <p>© 2024 Digitalkkari | <a href="mailto:info@digitalkkari.fi">info@digitalkkari.fi</a></p>
+        <p>© 2024 Digitalkkari | <a href="mailto:suomendigitalkkari@gmail.com">suomendigitalkkari@gmail.com</a></p>
     </footer>
 
 </body>
