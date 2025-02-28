@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digitalkkari</title>
+    <title>Suomen Digitalkkari</title>
     <style>
         * {
             margin: 0;
@@ -27,7 +27,6 @@
             box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
             text-align: center;
             position: relative;
-            margin-top: 40px; /* Väli logon ja otsikkopalkin väliin */
         }
 
         header h1 {
@@ -50,19 +49,11 @@
             display: flex;
             justify-content: center;
             margin-bottom: 40px;
-            margin-top: 60px; /* Väli logon yläpuolelle */
         }
 
         .logo-container img {
-            max-width: 30%; /* Logo pienennetty */
+            max-width: 25%; /* Logo pienennetty */
             height: auto;
-        }
-
-        /* Logo isompi kapeilla näytöillä */
-        @media (max-width: 768px) {
-            .logo-container img {
-                max-width: 50%; /* Logo suurempi kapeilla näytöillä */
-            }
         }
 
         .contact-buttons {
@@ -129,13 +120,6 @@
             font-size: 1.5rem;
         }
 
-        .slogan {
-            font-size: 1.2rem;
-            color: #4C4F45;
-            margin-top: 20px;
-            font-style: italic;
-        }
-
         footer {
             padding: 30px 0;
             background-color: #4C4F45;
@@ -151,6 +135,28 @@
 
         footer a:hover {
             color: #4C4F45;
+        }
+
+        .question-list {
+            margin-top: 40px;
+            font-size: 1.1rem;
+        }
+
+        .question-list ul {
+            list-style-type: none;
+        }
+
+        .question-list li {
+            margin-bottom: 10px;
+        }
+
+        .question-list li a {
+            text-decoration: none;
+            color: #4C4F45;
+        }
+
+        .question-list li a:hover {
+            text-decoration: underline;
         }
 
         /* Media Queries for small screens */
@@ -182,53 +188,25 @@
                 font-size: 0.9rem;
             }
         }
-
-        /* Digivalmentaja linkki oikeaan yläkulmaan */
-        .pro-link {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background-color: #F5F6E9;
-            color: #4C4F45;
-            padding: 10px 20px;
-            border-radius: 50px;
-            font-weight: bold;
-            text-decoration: none;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .pro-link:hover {
-            background-color: #333;
-            color: #F5F6E9;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        }
-
     </style>
 </head>
 <body>
 
     <!-- Logo -->
-    <header>
-        <h1>Digitalkkari</h1>
-        <p>Apua kun teknologia takkuaa – helposti, nopeasti ja edullisesti</p>
-    </header>
-
     <div class="logo-container">
         <img src="dtlogo.png" alt="Digitalkkari Logo">
     </div>
 
-    <!-- Slogan -->
-    <div class="slogan">
-        Etänä tai paikanpäällä, valitse itsellesi sopivin tapa!
-    </div>
+    <header>
+        <h1>Suomen Digitalkkari</h1>
+        <p>Apua kun teknologia takkuaa – helposti, nopeasti ja edullisesti - etänä tai paikanpäällä</p>
+    </header>
 
-    <!-- Contact Buttons -->
     <div class="contact-buttons">
-        <a href="https://wa.me/358XXXXXXXXX" class="contact-btn">Lähetä WhatsApp</a>
+        <a href="https://wa.me/0504432500" class="contact-btn">Lähetä WhatsApp</a>
         <a href="https://calendly.com/your-calendar-link" class="contact-btn">Varaa Aika</a>
-        <a href="mailto:info@digitalkkari.fi" class="contact-btn">Lähetä Sähköposti</a>
-        <a href="tel:+358XXXXXXXX" class="contact-btn">Soita</a>
+        <a href="mailto:suomendigitalkkari@gmail.com" class="contact-btn">Lähetä Sähköposti</a>
+        <a href="tel:+3580504432500" class="contact-btn">Soita</a>
     </div>
 
     <!-- Products -->
@@ -271,11 +249,20 @@
         </div>
     </div>
 
-    <!-- Digivalmentaja Link (Pro) -->
-    <a href="pro.html" class="pro-link">Digivalmentaja</a>
+    <!-- FAQ Section -->
+    <div class="question-list">
+        <h2>Usein kysytyt kysymykset</h2>
+        <ul>
+            <li><a href="#">Miten saan kotiverkon kuntoon?</a></li>
+            <li><a href="#">Miten voin saada apua puhelimeni käytössä?</a></li>
+            <li><a href="#">Miten voin varmistaa tietoturvani?</a></li>
+            <li><a href="#">Voinko saada apua etänä?</a></li>
+            <li><a href="#">Miten voin varata ajan?</a></li>
+        </ul>
+    </div>
 
     <footer>
-        <p>© 2024 Digitalkkari | <a href="mailto:info@digitalkkari.fi">info@digitalkkari.fi</a></p>
+        <p>© 2024 Suomen Digitalkkari | <a href="mailto:suomendigitalkkari@gmail.com">suomendigitalkkari@gmail.com</a></p>
     </footer>
 
 </body>
