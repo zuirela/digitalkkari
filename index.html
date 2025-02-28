@@ -13,8 +13,8 @@
         }
 
         body {
-            background-color: #F5F6E9;
-            color: #4C4F45;
+            background-color: #F5F6E9; /* Beige tausta */
+            color: #4C4F45; /* Tumma vihreä */
             text-align: center;
             font-size: 16px;
             line-height: 1.5;
@@ -22,11 +22,12 @@
 
         header {
             padding: 60px 0;
-            background-color: #4C4F45;
-            color: #F5F6E9;
+            background-color: #4C4F45; /* Tumma vihreä tausta */
+            color: #F5F6E9; /* Vaalean beige teksti */
             box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
             text-align: center;
             position: relative;
+            margin-top: 40px; /* Väli logon ja otsikkopalkin väliin */
         }
 
         header h1 {
@@ -34,6 +35,7 @@
             color: #F5F6E9;
             margin-bottom: 20px;
             font-weight: bold;
+            line-height: 1.3;
         }
 
         header p {
@@ -48,11 +50,19 @@
             display: flex;
             justify-content: center;
             margin-bottom: 40px;
+            margin-top: 60px; /* Väli logon yläpuolelle */
         }
 
         .logo-container img {
-            max-width: 25%;
+            max-width: 30%; /* Logo pienennetty */
             height: auto;
+        }
+
+        /* Logo isompi kapeilla näytöillä */
+        @media (max-width: 768px) {
+            .logo-container img {
+                max-width: 50%; /* Logo suurempi kapeilla näytöillä */
+            }
         }
 
         .contact-buttons {
@@ -119,11 +129,11 @@
             font-size: 1.5rem;
         }
 
-        .question-list {
-            padding: 20px;
-            background-color: #F5F6E9;
-            margin-top: 40px;
-            text-align: center;
+        .slogan {
+            font-size: 1.2rem;
+            color: #4C4F45;
+            margin-top: 20px;
+            font-style: italic;
         }
 
         footer {
@@ -172,20 +182,48 @@
                 font-size: 0.9rem;
             }
         }
+
+        /* Digivalmentaja linkki oikeaan yläkulmaan */
+        .pro-link {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #F5F6E9;
+            color: #4C4F45;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .pro-link:hover {
+            background-color: #333;
+            color: #F5F6E9;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
     </style>
 </head>
 <body>
 
     <!-- Logo -->
-    <div class="logo-container">
-        <img src="dtlogo.png" alt="Digitalkkari Logo">
-    </div>
-
     <header>
         <h1>Digitalkkari</h1>
         <p>Apua kun teknologia takkuaa – helposti, nopeasti ja edullisesti</p>
     </header>
 
+    <div class="logo-container">
+        <img src="dtlogo.png" alt="Digitalkkari Logo">
+    </div>
+
+    <!-- Slogan -->
+    <div class="slogan">
+        Etänä tai paikanpäällä, valitse itsellesi sopivin tapa!
+    </div>
+
+    <!-- Contact Buttons -->
     <div class="contact-buttons">
         <a href="https://wa.me/358XXXXXXXXX" class="contact-btn">Lähetä WhatsApp</a>
         <a href="https://calendly.com/your-calendar-link" class="contact-btn">Varaa Aika</a>
@@ -233,16 +271,8 @@
         </div>
     </div>
 
-    <div class="question-list">
-        <h3>Esimerkkejä kysymyksistä</h3>
-        <ul>
-            <li>Kuinka voin parantaa kotiverkon nopeutta?</li>
-            <li>Millä tavalla voin suojata laitteeni viruksilta?</li>
-            <li>Miten voin liittää uuden laitteen kotiverkkoon?</li>
-            <li>Voiko puhelimen tietoturvaa parantaa ilman teknistä osaamista?</li>
-            <li>Kuinka ottaa varmuuskopiot Android-puhelimesta?</li>
-        </ul>
-    </div>
+    <!-- Digivalmentaja Link (Pro) -->
+    <a href="pro.html" class="pro-link">Digivalmentaja</a>
 
     <footer>
         <p>© 2024 Digitalkkari | <a href="mailto:info@digitalkkari.fi">info@digitalkkari.fi</a></p>
