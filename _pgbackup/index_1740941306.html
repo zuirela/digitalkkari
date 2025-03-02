@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="fi"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Digitalkkari</title>         
+        <style>* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Open Sans', sans-serif; } body { background-color: #F5F6E9;  /* Beige tausta */ color: #4C4F45;  /* Tumma vihreä */ text-align: center; font-size: 16px; line-height: 1.5; } header { padding: 30px 0;  /* Muutetaan yläpaddings arvoksi 30px, jotta tila pienenee */ background-color: #4C4F45;  /* Tumma vihreä tausta */ color: #F5F6E9;  /* Vaalean beige teksti */ box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); text-align: center; position: relative; margin-top: 40px; } /* Väli logon ja otsikkopalkin väliin */header h1 { font-size: 3rem; color: #F5F6E9; margin-bottom: 20px; font-weight: bold; line-height: 1.3; } header p { font-size: 1.2rem; color: #F5F6E9; max-width: 600px; margin: 0 auto; font-style: italic; } .logo-container { display: flex; justify-content: center; margin-bottom: 40px; margin-top: 60px;  /* Väli logon yläpuolelle */ } .logo-container img { max-width: 30%;  /* Logo pienennetty */ height: auto; } /* Logo isompi kapeilla näytöillä */@media (max-width: 768px) { .logo-container img {  max-width: 50%;   /* Logo suurempi kapeilla näytöillä */ } } .contact-buttons { display: flex; justify-content: center; gap: 20px; margin-top: 30px; flex-wrap: wrap; } .contact-btn { padding: 12px 20px; background-color: #F5F6E9; color: #4C4F45; border-radius: 50px; text-decoration: none; font-weight: bold; transition: all 0.3s ease; display: inline-block; text-align: center; margin: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); } .contact-btn:hover { background-color: #333; color: #F5F6E9; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); } .product-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; padding: 40px; } .product-box { background-color: #F5F6E9; width: 220px; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); text-align: center; margin-bottom: 30px; } .product-box h3 { color: #4C4F45; margin-bottom: 15px; font-size: 1.2rem; } .product-box p { color: #4C4F45; font-size: 1rem; margin-bottom: 15px; } .product-box span { font-weight: bold; color: #4C4F45; font-size: 1.5rem; } .slogan { font-size: 1.2rem; color: #4C4F45; margin-top: 20px; font-style: italic; } footer { padding: 30px 0; background-color: #4C4F45; color: #F5F6E9; margin-top: 60px; font-size: 1rem; } footer a { color: #F5F6E9; text-decoration: none; } footer a:hover { color: #4C4F45; } /* Media Queries for small screens */@media (max-width: 768px) { header h1 {  font-size: 2.5rem; }  header p {  font-size: 1rem; }  .contact-btn {  padding: 12px 20px;  font-size: 1rem; }  .contact-buttons {  flex-direction: column;  align-items: center; }  .product-box {  width: 100%;  max-width: 300px; }  footer {  font-size: 0.9rem; } } /* Digivalmentaja linkki oikeaan yläkulmaan */.pro-link { position: fixed; top: 20px; right: 20px; background-color: #F5F6E9; color: #4C4F45; padding: 10px 20px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; } .pro-link:hover { background-color: #333; color: #F5F6E9; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); } /* Yläosan vihreä palkki */.top-bar { background-color: #4C4F45; color: #F5F6E9; padding: 10px 0; text-align: center; font-size: 1rem; }
+        }</style>         
+        <link href="css/theme.css" rel="stylesheet" type="text/css"> 
+    </head>     
+    <body> 
+        <!-- Yläosan vihreä palkki -->         
+        <div class="top-bar"></div>         
+        <div class="top-bar">
+            <a href="pro.html" class="pro-link">Digivalmentaja</a>
+        </div>
+        <a href="pro.html" class="pro-link">Digivalmentaja</a> <a href="pro.html" class="pro-link">Digivalmentaja</a>
+        <div class="top-bar">
+            <a href="pro.html" class="pro-link">Digivalmentaja</a>
+        </div>         
+        <div class="top-bar"></div>         
+        <!-- Logo -->         
+        <div class="logo-container"> 
+            <img src="dtlogo.png" alt="Digitalkkari Logo"> 
+        </div>         
+        <!-- Slogan and Subtext -->         
+        <div class="slogan"> 
+            Apua, kun teknologia pettää.
+</div>         
+        <div class="slogan-subtext"> 
+            Etänä tai paikanpäällä, valitse itsellesi sopivin tapa!
+</div>         
+        <!-- Contact Buttons -->         
+        <div class="contact-buttons"> <a href="https://wa.me/358504432500" class="contact-btn">Lähetä WhatsApp</a> <a href="https://wa.me/358504432500" class="contact-btn">Kysy hintaa ongelman ratkaisusta</a> 
+        </div>         
+        <!-- Products -->         
+        <div class="product-container"> 
+            <div class="product-box"> 
+                <h3>WhatsApp-palvelu</h3> 
+                <p>Nopea ja edullinen palvelu, jossa asiakas saa vastauksia ja ohjeita henkilökohtaisesti. Jos asiakas ei saa apua, palvelu on ilmainen.</p> <span>9,90 &euro; / ongelma</span> 
+            </div>             
+            <div class="product-box"> 
+                <h3>Kotiverkon tai laitteiden ongelmanratkaisu</h3> 
+                <p>Verkon tai laitteiden asennus, ongelmanratkaisu ja konfigurointi kotikäynneillä tai etänä.</p> <span>Alkaen 9,90 &euro;</span> 
+            </div>             
+            <div class="product-box"> 
+                <h3>Kuukausipaketit ja jatkuva tuki</h3> 
+                <p>Jatkuva tekninen tuki ja neuvonta kuukausimaksulla. Sisältää esimerkiksi säännöllisen etätuen ja laitteiden etäylläpidon.</p> <span>Alkaen €29/kk</span> 
+            </div>             
+            <div class="product-box"> 
+                <h3>Varmuuskopiointi ja tietoturva</h3> 
+                <p>Säännöllinen varmuuskopiointi ja tietoturvapäivitykset.</p> <span>Alkaen €39/kk</span> 
+            </div>             
+        </div>         
+        <!-- Digivalmentaja Link (Pro) -->                  <a href="mailto:suomendigitalkkari@gmail.com" class="contact-btn">Lähetä sähköposti</a> <a href="https://calendly.com/your-calendar-link" class="contact-btn">Varaa aika</a> <a href="tel:+358504432500" class="contact-btn">Soita</a> 
+        <footer> 
+            <p>© 2024 Digitalkkari | <a href="mailto:suomendigitalkkari@gmail.com">suomendigitalkkari@gmail.com</a></p> 
+        </footer>         
+    </body>     
+</html>
