@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hinnasto & Palvelut | Digitalkkari</title>
+    <title>Palvelut | Digitalkkari</title>
     <style>
         * {
             margin: 0;
@@ -18,6 +18,35 @@
             text-align: center;
             font-size: 16px;
             line-height: 1.5;
+        }
+
+        header, footer {
+            background-color: #4C4F45; /* Tumma vihreä tausta */
+            color: #F5F6E9; /* Vaalea teksti */
+            padding: 20px 0;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .nav-links {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .nav-links a {
+            color: #F5F6E9;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
         }
 
         h1 {
@@ -36,9 +65,7 @@
             max-width: 800px;
             margin: 40px auto;
             padding: 20px;
-            background: #FFF;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background: none;
         }
 
         .service-list h2 {
@@ -55,7 +82,7 @@
         .service-list li {
             font-size: 18px;
             padding: 10px 0;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #4C4F45;
         }
 
         .service-list li:last-child {
@@ -69,6 +96,13 @@
     </style>
 </head>
 <body>
+    <header>
+        <div class="nav-links">
+            <a href="index.html">Etusivulle</a>
+        </div>
+        Digitalkkari – Apua, kun teknologia pettää
+    </header>
+
     <h1>Hinnasto & Palvelut</h1>
     <p>Selkeät ja kiinteähintaiset palvelut, joilla saat teknologia-apua helposti ja nopeasti.</p>
     
@@ -87,5 +121,9 @@
             <li>Tulostin & oheislaitteet kuntoon – <span class="price">59 €</span><br>Tulostimen, skannerin ja muiden laitteiden yhdistäminen ja asetukset.</li>
         </ul>
     </div>
+
+    <footer>
+        © 2024 Digitalkkari | <a href="mailto:suomendigitalkkari@gmail.com" style="color: #F5F6E9; text-decoration: none;">Ota yhteyttä</a>
+    </footer>
 </body>
 </html>
